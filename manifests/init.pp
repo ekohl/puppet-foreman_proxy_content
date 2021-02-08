@@ -142,7 +142,7 @@ class foreman_proxy_content (
     false => 443
   }
 
-  ensure_packages('katello-debug')
+  #ensure_packages('katello-debug')
 
   include certs::foreman_proxy
   Class['certs::foreman_proxy'] ~> Service['foreman-proxy']
